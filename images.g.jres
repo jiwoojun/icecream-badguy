@@ -1,0 +1,12 @@
+{
+    "image1": {
+        "data": "hwQRABAAAAAA0AAAAAAAAAAA/Q8AAAAAANAA8AAAAAAAAADwAAAAAAAAAPAAAAAA//8fHx8PAPB/Ih8fHw8A8H8iHx8f////3yIfHx8PAAB/Ih8fHw8AAH8iHx8f//////8fHx8PAPAAAADwAAAAAAAAAPAAAAAAANAA8AAAAAAAAP0PAAAAAADQAAAAAAAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "badguy"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
