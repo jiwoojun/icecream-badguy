@@ -1,4 +1,4 @@
-let mySprite = sprites.create(assets.image`badguy`, SpriteKind.Player)
+let badguy = sprites.create(assets.image`badguy`, SpriteKind.Player)
 let mySprite2 = sprites.create(img`
     3 3 3 3 3 3 
     3 3 3 3 3 3 
@@ -10,14 +10,18 @@ let mySprite2 = sprites.create(img`
     . d d d d . 
     `, SpriteKind.Food)
 let mySprite3 = sprites.create(img`
-    2 2 2 2 2 . 
-    2 2 2 2 2 . 
-    a a a a a . 
-    a a a a a . 
     3 3 3 3 3 . 
+    3 3 3 3 3 . 
+    3 3 3 3 3 . 
+    a a a a a . 
+    a a a a a . 
     d d d d d . 
     . d d d . . 
     . . d . . . 
     `, SpriteKind.Food)
-mySprite2.setPosition(38, 20)
+controller.moveSprite(badguy, 100, 100)
+badguy.setStayInScreen(false)
+badguy.setPosition(127, 175)
+tiles.setCurrentTilemap(tilemap`level1`)
 scene.setBackgroundColor(7)
+scene.cameraFollowSprite(badguy)
